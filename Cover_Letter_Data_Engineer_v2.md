@@ -62,13 +62,3 @@ Thank you for considering my application. I look forward to the possibility of j
 Sincerely,
 
 Serkan Coskun
-
----
-
-### Key Projects to Discuss in Interviews:
-
-- Batch Tracking Data Warehouse (8 source systems, 500K+ daily transactions)
-- Real-Time Data Refresh System (<5 min latency, 100K+ records)
-- Enterprise Knowledge Graph (1M+ nodes, 5M+ relationships)
-- Automated Data Quality Framework (99.5% quality score)
-- Cloud Migration & Cost Optimization (30% cost reduction)

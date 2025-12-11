@@ -46,13 +46,3 @@ Thank you for considering my application. I look forward to the possibility of j
 Sincerely,
 
 Serkan Coskun
-
----
-
-### Key Achievements to Highlight in Interviews:
-
-- Published first pharmaceutical manufacturing knowledge graph at Pharmaceutical
-- Deployed 12+ production ML models with automated monitoring
-- Built RAG systems processing 10,000+ technical documents
-- Reduced data latency from 24 hours to <5 minutes
-- Achieved 99.5% data quality across production datasets
