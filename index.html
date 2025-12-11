@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Serkan Coskun - CV Portfolio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        padding: 40px 20px;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 20px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+      }
+
+      .header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 60px 40px;
+        text-align: center;
+      }
+
+      .header h1 {
+        font-size: 3em;
+        margin-bottom: 10px;
+        font-weight: 700;
+      }
+
+      .header p {
+        font-size: 1.3em;
+        opacity: 0.95;
+        margin-bottom: 20px;
+      }
+
+      .contact-info {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+      }
+
+      .contact-info a {
+        color: white;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 1.1em;
+        transition: transform 0.3s;
+      }
+
+      .contact-info a:hover {
+        transform: translateY(-3px);
+      }
+
+      .main-content {
+        padding: 50px 40px;
+      }
+
+      .intro {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+
+      .intro h2 {
+        color: #333;
+        font-size: 2em;
+        margin-bottom: 20px;
+      }
+
+      .intro p {
+        color: #666;
+        font-size: 1.2em;
+        line-height: 1.8;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .cv-section {
+        margin-bottom: 40px;
+      }
+
+      .cv-card {
+        background: #f8f9fa;
+        border-radius: 15px;
+        padding: 30px;
+        margin-bottom: 30px;
+        border: 2px solid #e9ecef;
+        transition: all 0.3s;
+      }
+
+      .cv-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        border-color: #667eea;
+      }
+
+      .cv-card h3 {
+        color: #667eea;
+        font-size: 1.8em;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .cv-card p {
+        color: #666;
+        font-size: 1.1em;
+        margin-bottom: 20px;
+        line-height: 1.6;
+      }
+
+      .cv-card .highlights {
+        background: white;
+        padding: 15px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+
+      .cv-card .highlights h4 {
+        color: #333;
+        font-size: 1.1em;
+        margin-bottom: 10px;
+      }
+
+      .cv-card .highlights ul {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .cv-card .highlights li {
+        color: #555;
+        padding: 5px 0;
+        padding-left: 25px;
+        position: relative;
+      }
+
+      .cv-card .highlights li:before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: #667eea;
+        font-weight: bold;
+      }
+
+      .download-buttons {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+      }
+
+      .btn {
+        padding: 12px 30px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1em;
+        transition: all 0.3s;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .btn-primary {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+      }
+
+      .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+      }
+
+      .btn-secondary {
+        background: white;
+        color: #667eea;
+        border: 2px solid #667eea;
+      }
+
+      .btn-secondary:hover {
+        background: #667eea;
+        color: white;
+      }
+
+      .btn-github {
+        background: #24292e;
+        color: white;
+      }
+
+      .btn-github:hover {
+        background: #1a1e22;
+      }
+
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        margin: 40px 0;
+      }
+
+      .stat-card {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 25px;
+        border-radius: 15px;
+        text-align: center;
+      }
+
+      .stat-card h3 {
+        font-size: 2.5em;
+        margin-bottom: 5px;
+      }
+
+      .stat-card p {
+        font-size: 1em;
+        opacity: 0.9;
+      }
+
+      .footer {
+        background: #f8f9fa;
+        padding: 30px;
+        text-align: center;
+        color: #666;
+      }
+
+      .footer p {
+        margin-bottom: 10px;
+      }
+
+      .footer a {
+        color: #667eea;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .badge {
+        display: inline-block;
+        background: #667eea;
+        color: white;
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-size: 0.9em;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+
+      @media (max-width: 768px) {
+        .header h1 {
+          font-size: 2em;
+        }
+
+        .header p {
+          font-size: 1.1em;
+        }
+
+        .contact-info {
+          flex-direction: column;
+          gap: 15px;
+        }
+
+        .main-content {
+          padding: 30px 20px;
+        }
+
+        .download-buttons {
+          flex-direction: column;
+        }
+
+        .btn {
+          width: 100%;
+          justify-content: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Serkan Coskun</h1>
+        <p>Senior Data Engineer | AI/ML Engineer</p>
+        <div class="contact-info">
+          <a href="mailto:serkan.coskun@email.com">📧 Email</a>
+          <a href="https://linkedin.com/in/serkancoskun" target="_blank"
+            >💼 LinkedIn</a
+          >
+          <a href="https://github.com/sercostr" target="_blank">💻 GitHub</a>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div class="intro">
+          <h2>👋 Welcome to My CV Portfolio</h2>
+          <p>
+            I've created tailored CVs for different roles based on my 6+ years
+            of experience in Data Engineering and AI/ML at Pharmaceutical
+            Digital Manufacturing. Each CV is customized to highlight the most
+            relevant skills and achievements for that specific role.
+          </p>
+          <p style="margin-top: 15px; font-weight: 600; color: #667eea">
+            Download the version that best matches your job opening!
+          </p>
+        </div>
+
+        <div class="stats">
+          <div class="stat-card">
+            <h3>6+</h3>
+            <p>Years Experience</p>
+          </div>
+          <div class="stat-card">
+            <h3>100K+</h3>
+            <p>Records Processed Daily</p>
+          </div>
+          <div class="stat-card">
+            <h3>12+</h3>
+            <p>Production ML Models</p>
+          </div>
+          <div class="stat-card">
+            <h3>1M+</h3>
+            <p>Knowledge Graph Nodes</p>
+          </div>
+        </div>
+
+        <!-- AI/ML Engineer CV -->
+        <div class="cv-card">
+          <h3>🤖 AI/ML Engineer</h3>
+          <p>
+            Perfect for roles focused on machine learning, RAG systems,
+            LangChain, and AI application development.
+          </p>
+          <div class="highlights">
+            <h4>Key Highlights:</h4>
+            <ul>
+              <li>
+                Production ML models with 70%+ accuracy (XGBoost,
+                ExtraTreesRegressor)
+              </li>
+              <li>RAG systems using LangChain, OpenAI, and vector databases</li>
+              <li>Real-time ML pipelines processing 100K+ daily predictions</li>
+              <li>
+                Automated model monitoring, drift detection, and retraining
+              </li>
+              <li>Knowledge graph with 1M+ nodes for semantic search</li>
+            </ul>
+          </div>
+          <div>
+            <span class="badge">Python</span>
+            <span class="badge">LangChain</span>
+            <span class="badge">Scikit-learn</span>
+            <span class="badge">XGBoost</span>
+            <span class="badge">RAG</span>
+            <span class="badge">Vector DBs</span>
+            <span class="badge">OpenAI</span>
+          </div>
+          <div class="download-buttons" style="margin-top: 20px">
+            <a
+              href="Serkan_Coskun_AI_ML_Engineer_2026_v2.md"
+              class="btn btn-primary"
+              download
+            >
+              📄 Download Markdown
+            </a>
+            <a
+              href="Serkan_Coskun_AI_ML_Engineer_2026_v2.docx"
+              class="btn btn-secondary"
+              download
+            >
+              📝 Download Word
+            </a>
+            <a
+              href="Serkan_Coskun_AI_ML_Engineer_2026_v2.pdf"
+              class="btn btn-secondary"
+              download
+            >
+              📑 Download PDF
+            </a>
+          </div>
+        </div>
+
+        <!-- Data Engineer CV -->
+        <div class="cv-card">
+          <h3>🔧 Senior Data Engineer</h3>
+          <p>
+            Ideal for roles focused on data pipelines, ETL, data warehousing,
+            and cloud architecture.
+          </p>
+          <div class="highlights">
+            <h4>Key Highlights:</h4>
+            <ul>
+              <li>Real-time ETL processing 500K+ transactions daily</li>
+              <li>
+                Enterprise knowledge graph on Neo4j (1M+ nodes, 5M+
+                relationships)
+              </li>
+              <li>
+                Multi-source data integration (Snowflake, PostgreSQL, Oracle,
+                SAP)
+              </li>
+              <li>Apache Airflow orchestration with 50+ production DAGs</li>
+              <li>99.5% data quality with automated validation frameworks</li>
+            </ul>
+          </div>
+          <div>
+            <span class="badge">Python</span>
+            <span class="badge">SQL</span>
+            <span class="badge">PostgreSQL</span>
+            <span class="badge">Snowflake</span>
+            <span class="badge">Neo4j</span>
+            <span class="badge">Airflow</span>
+            <span class="badge">AWS</span>
+          </div>
+          <div class="download-buttons" style="margin-top: 20px">
+            <a
+              href="Serkan_Coskun_Data_Engineer_2026_v2.md"
+              class="btn btn-primary"
+              download
+            >
+              📄 Download Markdown
+            </a>
+            <a
+              href="Serkan_Coskun_Data_Engineer_2026_v2.docx"
+              class="btn btn-secondary"
+              download
+            >
+              📝 Download Word
+            </a>
+            <a
+              href="Serkan_Coskun_Data_Engineer_2026_v2.pdf"
+              class="btn btn-secondary"
+              download
+            >
+              📑 Download PDF
+            </a>
+          </div>
+        </div>
+
+        <!-- Cover Letters Section -->
+        <div class="cv-section">
+          <h2 style="text-align: center; color: #333; margin-bottom: 30px">
+            📬 Cover Letters
+          </h2>
+
+          <div class="cv-card">
+            <h3>✉️ Tailored Cover Letters</h3>
+            <p>
+              Customizable cover letters for both AI/ML Engineer and Data
+              Engineer positions. These templates include specific examples from
+              my GitHub projects and quantifiable achievements.
+            </p>
+            <div class="download-buttons">
+              <a
+                href="Cover_Letter_AI_ML_Engineer_v2.md"
+                class="btn btn-primary"
+                download
+              >
+                📄 AI/ML Cover Letter (MD)
+              </a>
+              <a
+                href="Cover_Letter_Data_Engineer_v2.md"
+                class="btn btn-primary"
+                download
+              >
+                📄 Data Engineer Cover Letter (MD)
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- GitHub Projects Section -->
+        <div class="cv-section">
+          <h2 style="text-align: center; color: #333; margin-bottom: 30px">
+            � Technical Expertise
+          </h2>
+
+          <div class="cv-card">
+            <h3>📊 Real-Time Data Platform & ML Models</h3>
+            <p>
+              Data refresh automation, ML models for manufacturing predictions,
+              and real-time alert systems processing 100K+ daily records.
+            </p>
+            <div>
+              <span class="badge">Python</span>
+              <span class="badge">Scikit-learn</span>
+              <span class="badge">PostgreSQL</span>
+              <span class="badge">Snowflake</span>
+              <span class="badge">ML Models</span>
+            </div>
+          </div>
+
+          <div class="cv-card">
+            <h3>🕸️ Knowledge Graph & ETL Orchestration</h3>
+            <p>
+              Enterprise Knowledge Graph with ETL pipelines, Neo4j graph
+              database management, and Airflow orchestration handling 1M+ nodes.
+            </p>
+            <div>
+              <span class="badge">Neo4j</span>
+              <span class="badge">Cypher</span>
+              <span class="badge">Apache Airflow</span>
+              <span class="badge">Python</span>
+              <span class="badge">AWS S3</span>
+            </div>
+          </div>
+
+          <div class="cv-card">
+            <h3>🤖 RAG Systems & AI Engineering</h3>
+            <p>
+              Comprehensive RAG systems, LangChain applications, and AI/ML
+              engineering toolkit for enterprise document processing.
+            </p>
+            <div>
+              <span class="badge">LangChain</span>
+              <span class="badge">OpenAI</span>
+              <span class="badge">Vector DBs</span>
+              <span class="badge">RAG</span>
+              <span class="badge">Python</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Why This System Works -->
+        <div
+          class="cv-section"
+          style="
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 40px;
+          "
+        >
+          <h2 style="text-align: center; color: #333; margin-bottom: 20px">
+            💡 Why This System Works
+          </h2>
+          <div style="max-width: 800px; margin: 0 auto">
+            <ul style="list-style: none; padding: 0">
+              <li
+                style="
+                  padding: 15px;
+                  margin-bottom: 10px;
+                  background: white;
+                  border-radius: 10px;
+                "
+              >
+                <strong style="color: #667eea">✅ Easy for Recruiters:</strong>
+                One link gives them everything they need
+              </li>
+              <li
+                style="
+                  padding: 15px;
+                  margin-bottom: 10px;
+                  background: white;
+                  border-radius: 10px;
+                "
+              >
+                <strong style="color: #667eea"
+                  >✅ Shows Professionalism:</strong
+                >
+                Demonstrates tech skills and attention to detail
+              </li>
+              <li
+                style="
+                  padding: 15px;
+                  margin-bottom: 10px;
+                  background: white;
+                  border-radius: 10px;
+                "
+              >
+                <strong style="color: #667eea">✅ Tailored Content:</strong>
+                Each CV highlights role-specific achievements
+              </li>
+              <li
+                style="
+                  padding: 15px;
+                  margin-bottom: 10px;
+                  background: white;
+                  border-radius: 10px;
+                "
+              >
+                <strong style="color: #667eea">✅ GitHub Integration:</strong>
+                Direct links to project repositories for proof
+              </li>
+              <li style="padding: 15px; background: white; border-radius: 10px">
+                <strong style="color: #667eea">✅ Always Updated:</strong>
+                Single source of truth, easy to maintain
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>
+          <strong>Looking to hire a Data Engineer or AI/ML Engineer?</strong>
+        </p>
+        <p>
+          Feel free to
+          <a href="mailto:serkan.coskun@email.com">reach out via email</a> or
+          connect with me on
+          <a href="https://linkedin.com/in/serkancoskun" target="_blank"
+            >LinkedIn</a
+          >
+        </p>
+        <p style="margin-top: 20px; font-size: 0.9em; color: #999">
+          Last Updated: December 2024 | Inspired by
+          <a href="https://www.youtube.com/watch?v=bsH-vBGNERE" target="_blank"
+            >10x Your Interview Rate System</a
+          >
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
