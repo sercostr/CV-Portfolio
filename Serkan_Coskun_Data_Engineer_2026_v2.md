@@ -12,11 +12,12 @@ Results-driven Senior Data Engineer with 6+ years of experience designing and im
 
 **Core Competencies:**
 
-- **Data Engineering**: Real-time ETL, Data Warehousing, Data Quality Frameworks, Pipeline Orchestration
+- **Data Engineering**: Real-time ETL, Data Warehousing, Data Quality Frameworks, Pipeline Orchestration, Data Governance
 - **Database Technologies**: PostgreSQL, Snowflake, Neo4j, Oracle, SQL Server, Redshift
-- **Cloud Platforms**: AWS (S3, ECS, RDS, Lambda), Docker, Kubernetes, Terraform
+- **Cloud Platforms**: AWS (S3, ECS, RDS, Lambda), Azure (Data Factory, Blob Storage, Key Vault, Synapse), Docker, Kubernetes, Terraform
+- **Microsoft Ecosystem**: Microsoft Fabric, Microsoft Purview, Azure Data Factory, Synapse Analytics
 - **Programming**: Python, SQL, Cypher, Bash, PySpark
-- **Tools**: Apache Airflow, dbt, Git, CI/CD, Jenkins
+- **Tools**: Apache Airflow, dbt, Git, CI/CD, Jenkins, Alation
 
 ---
 
@@ -65,10 +66,22 @@ _January 2019 - Present_
 - **Built data reconciliation processes** ensuring consistency between source systems and data warehouse
 - **Technologies**: Python, SQL, Great Expectations, custom validation frameworks
 
+#### Enterprise Data Governance & Microsoft Fabric Integration
+
+- **Architected end-to-end data governance pipeline** on Microsoft Fabric integrating Microsoft Purview with Alation for enterprise-wide data cataloging and lineage tracking
+- **Built automated data ingestion workflows** extracting metadata and business glossary from MSList and Transactional Compass systems into Microsoft Purview using Python notebooks
+- **Developed Purview-to-Alation synchronization pipeline** ensuring bi-directional metadata flow and maintaining data consistency across 1000+ assets
+- **Implemented Azure-native data pipelines** leveraging Azure Data Factory, Synapse Analytics, and Fabric notebooks for scalable data processing
+- **Established secure data infrastructure** using Azure Key Vault for secrets management, Azure Blob Storage for staging data, and Storage Accounts with container-level access controls
+- **Created data quality checks** within Fabric notebooks validating data integrity during ingestion and transformation phases
+- **Designed governance reporting dashboards in Power BI** tracking metadata coverage, lineage completeness, and data quality metrics across pharmaceutical operations with interactive visualizations for stakeholder reporting
+- **Technologies**: Microsoft Fabric, Azure Data Factory, Microsoft Purview, Alation, Azure Blob Storage, Azure Key Vault, Power BI, Python, PySpark, Synapse Analytics
+
 ---
 
 ## KEY ACHIEVEMENTS
 
+- **Data Governance Excellence**: Implemented enterprise-wide governance platform cataloging 1000+ data assets, improving data discovery by 70%
 - **Real-time Data Platform**: Reduced data latency from 24 hours to <5 minutes for critical manufacturing metrics
 - **Cost Optimization**: Decreased cloud infrastructure costs by 30% through architectural improvements
 - **Data Quality**: Achieved 99.5% data quality score across production datasets
@@ -99,6 +112,14 @@ _January 2019 - Present_
 - Implemented email notifications with HTML-formatted issue summaries
 - **Impact**: 40% reduction in data quality incidents, 3-hour improvement in detection time
 
+### **Enterprise Data Governance Platform - Microsoft Fabric & Purview**
+
+- Built end-to-end data governance pipeline integrating MSList and Transactional Compass to Microsoft Purview, then syncing to Alation
+- Implemented automated metadata extraction using Microsoft Fabric notebooks and Azure services
+- Orchestrated data pipelines using Azure Data Factory with secure Azure Key Vault integration
+- Developed interactive Power BI dashboards for governance metrics visualization and executive reporting
+- **Impact**: Centralized data catalog for 1000+ data assets, improved data discovery by 70%, reduced compliance audit time by 50%
+
 ---
 
 ## CERTIFICATIONS
@@ -127,6 +148,7 @@ Apache Airflow, dbt, Custom Python ETL frameworks, Pandas, SQLAlchemy
 
 ### Cloud & Infrastructure
 
+Azure (Data Factory, Blob Storage, Key Vault, Synapse Analytics), Microsoft Fabric, Microsoft Purview,
 AWS (S3, ECS, RDS, Lambda, CloudWatch), Docker, Kubernetes, Terraform
 
 ### Data Quality & Testing
@@ -143,4 +165,5 @@ Tableau, Power BI, Grafana, CloudWatch, Custom dashboards
 
 ### Additional Tools
 
+, Alation, Microsoft Fabric Notebooks
 Jupyter Notebooks, VS Code, DBeaver, pgAdmin, Neo4j Browser, Postman
