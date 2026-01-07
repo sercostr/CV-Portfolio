@@ -39,7 +39,7 @@ _January 2023 - Present_
 - **Designed and deployed production ML models** for pharmaceutical batch manufacturing predictions using XGBoost, ExtraTreesRegressor, achieving 70%+ accuracy in delivery time estimation
 - **Built real-time data refresh system** for batch tracking, processing 100K+ records daily from Snowflake UDH to PostgreSQL with <5 minute latency
 - **Implemented automated alert system** with schema validation, data quality checks, and anomaly detection, reducing data issues by 40%
-- **Developed multi-model ML pipeline** predicting QA duration, testing times, and disposition activities across multiple manufacturing sites (Puurs, Kalamazoo, Freiburg)
+- **Developed multi-model ML pipeline** predicting QA duration, testing times, and disposition activities across multiple manufacturing sites
 - **Created model monitoring framework** detecting data drift and automatically triggering retraining workflows
 - **Technologies**: Python, Scikit-learn, XGBoost, PostgreSQL, Snowflake, Oracle, SQL Server, SQLAlchemy, Pandas, NumPy
 

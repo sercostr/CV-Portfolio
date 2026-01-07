@@ -119,7 +119,7 @@
 - Drug Product (DP) models for multiple manufacturing facilities
 - Finished Product (FP) specialized models
 - Vaccine-specific models (VAC/VTS) with tailored feature sets
-- Multi-site predictions: Puurs, Kalamazoo, Freiburg
+- Multi-site predictions:
 
 **Production ML Infrastructure**:
 

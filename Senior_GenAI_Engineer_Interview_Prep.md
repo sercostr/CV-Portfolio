@@ -797,7 +797,7 @@ regulations while still enabling powerful AI capabilities."
 
    - Shows you're goal-oriented
 
-3. **"What's the current state of GenAI adoption at American Express? Are there existing RAG systems or agentic workflows?"**
+3. **"What's the current state of GenAI adoption at the company? Are there existing RAG systems or agentic workflows?"**
 
    - Helps you understand if you're building from scratch or improving
 
@@ -813,7 +813,7 @@ regulations while still enabling powerful AI capabilities."
 
    - Understanding team dynamics
 
-7. **"How does American Express approach responsible AI, especially for production-critical systems?"**
+7. **"How does the company approach responsible AI, especially for production-critical systems?"**
    - Shows awareness of AI ethics and risk
 
 ### Technical Deep-Dive Questions:
@@ -822,7 +822,7 @@ regulations while still enabling powerful AI capabilities."
 
    - Helps you understand concrete use cases
 
-9. **"What observability stack does American Express use? How would AI tools integrate with existing monitoring?"**
+9. **"What observability stack does the company use? How would AI tools integrate with existing monitoring?"**
 
    - Practical integration question
 
